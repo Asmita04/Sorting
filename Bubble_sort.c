@@ -14,7 +14,7 @@ void BubbleSort(int *A,int size)
  	int flag=0;
 	for(int i=0;i<size-1 && flag!=1 ;i++)
 	{
-		flag =0;
+		
 		for(int j=0;j<size-1-i;j++)
 		{
 			if(A[j]>A[j+1])
@@ -24,6 +24,7 @@ void BubbleSort(int *A,int size)
 				A[j+1]=temp;
 				flag=1;
 			}
+			flag=0;
 		}
 		PrintArray(A,size);
 		printf("\n");
